@@ -1,0 +1,46 @@
+{% extends 'basic.html' %}
+{% block body %}
+<!-- Example Code -->
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>Here are the details about your text</p>
+      </blockquote>
+    </figure>
+        
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Word Count</div>
+        </div>
+        <span class="badge text-bg-primary rounded-pill">{{total_word}}</span>
+      </li>  
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Letter Count</div>
+        </div>
+        <span class="badge text-bg-primary rounded-pill">{{total_char}}</span>
+      </li>      
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Punctuations</div>
+          <!-- Content for list item -->
+        </div>
+        <span class="badge text-bg-primary rounded-pill">{{total_punc}}</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Vowels</div>
+          <!-- {{vowels}} -->
+        </div>
+        <span class="badge text-bg-primary rounded-pill">{{total_vowel}}</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Consonents</div>
+          <!-- {{consonants}} -->
+        </div>
+        <span class="badge text-bg-primary rounded-pill">{{total_consonants}}</span>
+      </li>
+    </ol>
+
+    {% endblock %}
